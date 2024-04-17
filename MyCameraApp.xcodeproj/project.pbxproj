@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		127502262BCFF2F500266A05 /* MyCameraAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127502252BCFF2F500266A05 /* MyCameraAppApp.swift */; };
-		127502282BCFF2F500266A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127502272BCFF2F500266A05 /* ContentView.swift */; };
+		127502282BCFF2F500266A05 /* CameraFunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127502272BCFF2F500266A05 /* CameraFunctionView.swift */; };
 		1275022A2BCFF2F700266A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 127502292BCFF2F700266A05 /* Assets.xcassets */; };
 		1275022D2BCFF2F700266A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1275022C2BCFF2F700266A05 /* Preview Assets.xcassets */; };
+		127502342BCFF32E00266A05 /* CameraFunctionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127502332BCFF32E00266A05 /* CameraFunctionRepository.swift */; };
+		127502372BCFF36900266A05 /* DeviceSizeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127502362BCFF36900266A05 /* DeviceSizeManager.swift */; };
+		1275023C2BCFF3B500266A05 /* CameraFunctionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1275023B2BCFF3B500266A05 /* CameraFunctionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		127502222BCFF2F500266A05 /* MyCameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		127502252BCFF2F500266A05 /* MyCameraAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCameraAppApp.swift; sourceTree = "<group>"; };
-		127502272BCFF2F500266A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		127502272BCFF2F500266A05 /* CameraFunctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFunctionView.swift; sourceTree = "<group>"; };
 		127502292BCFF2F700266A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1275022C2BCFF2F700266A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		127502332BCFF32E00266A05 /* CameraFunctionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFunctionRepository.swift; sourceTree = "<group>"; };
+		127502362BCFF36900266A05 /* DeviceSizeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSizeManager.swift; sourceTree = "<group>"; };
+		1275023B2BCFF3B500266A05 /* CameraFunctionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFunctionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				127502252BCFF2F500266A05 /* MyCameraAppApp.swift */,
-				127502272BCFF2F500266A05 /* ContentView.swift */,
+				127502352BCFF35400266A05 /* Extension&Utility */,
+				1275023A2BCFF38500266A05 /* View */,
+				127502392BCFF38000266A05 /* ViewModel */,
+				127502382BCFF37700266A05 /* Repository */,
 				127502292BCFF2F700266A05 /* Assets.xcassets */,
 				1275022B2BCFF2F700266A05 /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				1275022C2BCFF2F700266A05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		127502352BCFF35400266A05 /* Extension&Utility */ = {
+			isa = PBXGroup;
+			children = (
+				127502362BCFF36900266A05 /* DeviceSizeManager.swift */,
+			);
+			path = "Extension&Utility";
+			sourceTree = "<group>";
+		};
+		127502382BCFF37700266A05 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				127502332BCFF32E00266A05 /* CameraFunctionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		127502392BCFF38000266A05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1275023B2BCFF3B500266A05 /* CameraFunctionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1275023A2BCFF38500266A05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				127502272BCFF2F500266A05 /* CameraFunctionView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				127502282BCFF2F500266A05 /* ContentView.swift in Sources */,
+				127502372BCFF36900266A05 /* DeviceSizeManager.swift in Sources */,
+				127502282BCFF2F500266A05 /* CameraFunctionView.swift in Sources */,
+				1275023C2BCFF3B500266A05 /* CameraFunctionViewModel.swift in Sources */,
+				127502342BCFF32E00266A05 /* CameraFunctionRepository.swift in Sources */,
 				127502262BCFF2F500266A05 /* MyCameraAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +319,7 @@
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +349,7 @@
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "カメラを使用するため";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
